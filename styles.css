@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #202020;
+  color: wheat;
+}
+
+body header {
+  background-color: #111111;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+body header .logo {
+  font-size: 2.5rem;
+  color: wheat;
+  margin-top: -6px;
+  margin-left: 25px;
+  padding: 10px;
+}
+
+body header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .navbar ul {
+  margin-right: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+body header .navbar li {
+  float: left;
+  font-size: 1.1rem;
+  padding: 10px;
+  margin: 2px;
+}
+
+body header .navbar li.active {
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+  border-radius: 3px;
+  background-color: goldenrod;
+  font-size: 1.2rem;
+}
+
+body header .navbar li.active a {
+  color: #292929;
+}
+
+body header .navbar a {
+  text-decoration: none;
+  color: wheat;
+}
+
+body .main {
+  color: blanchedalmond;
+}
+
+body .main .pg {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+body .main .pg:hover {
+  background-color: rgba(250, 235, 215, 0.205);
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+/*# sourceMappingURL=styles.css.map */

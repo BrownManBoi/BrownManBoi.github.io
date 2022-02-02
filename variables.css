@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111111;
+  color: wheat;
+}
+body header {
+  background-color: #111111;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+body header .logo {
+  font-size: 2.5rem;
+  color: wheat;
+  margin-top: -6px;
+  margin-left: 25px;
+  padding: 10px;
+}
+body header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .navbar ul {
+  margin-right: 46px;
+  display: flex;
+  list-style: none;
+}
+body header .navbar li {
+  float: left;
+  font-size: 1.1rem;
+  padding: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 4px;
+}
+body header .navbar li:hover {
+  transition: ease-in-out 0.2s;
+  background-color: rgba(218, 165, 32, 0.507);
+  border-radius: 3px;
+}
+body header .navbar li:hover a {
+  color: #111111;
+}
+body header .navbar li.active {
+  transition: ease-in-out 0.2s;
+  border-radius: 3px;
+  background-color: goldenrod;
+}
+body header .navbar li.active a {
+  color: #111111;
+}
+body header .navbar a {
+  text-decoration: none;
+  color: wheat;
+}
+body .main {
+  color: blanchedalmond;
+  margin: 0 2%;
+}
+body .main .pg {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 20px;
+}
+body .main .pg h1 {
+  color: #ebcb40;
+  letter-spacing: 3px;
+  font-size: 2rem;
+}
+body .main .pg .intro--title {
+  background-color: goldenrod;
+  color: #111111;
+  padding: 2px 23px 2px 23px;
+  border-radius: 2px;
+}
+body footer {
+  text-align: center;
+  padding-left: 450px;
+  line-height: 1%;
+}
+body footer span {
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  padding-right: 450px;
+  color: gray;
+  font-family: serif;
+}
+body footer .footrLinkArray {
+  box-sizing: border-box;
+  position: relative;
+}
+body footer .footrLinkArray ul {
+  list-style: none;
+  display: flex;
+  padding-right: 10px;
+}
+body footer .footrLinkArray li {
+  float: left;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px;
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+body footer .footrLinkArray li a {
+  text-decoration: underline;
+  color: goldenrod;
+}
+
+/*# sourceMappingURL=variables.css.map */
