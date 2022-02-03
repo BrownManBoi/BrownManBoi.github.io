@@ -100,6 +100,7 @@ body {
         justify-content: center;
         align-items: center;
         text-align: center;
+        box-sizing: border-box;
         // padding-left: 140px;
         line-height: 1%;
 
@@ -112,7 +113,6 @@ body {
         }
 
         .footrLinkArray {
-            box-sizing: border-box;
             position: relative;
 
             ul {
