@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Nunito", sans-serif;
   background-color: #111111;
   color: wheat;
 }
@@ -12,6 +12,7 @@ body header {
   top: 0;
   width: 100%;
   z-index: 1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body header .logo {
   font-size: 2.5rem;
@@ -69,31 +70,54 @@ body .main .pg {
   align-items: center;
   min-height: 100vh;
   padding: 0 20px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
 }
 body .main .pg h1 {
+  padding: 0;
+  margin: 0;
   color: #ebcb40;
   letter-spacing: 3px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
-body .main .pg .intro--title {
+body .main .pg .intro-img-1 {
+  width: 350px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(218, 165, 32, 0.267) 0px 54px 55px, rgba(218, 165, 32, 0.521) 0px -12px 30px, rgba(218, 165, 32, 0.699) 0px 4px 6px, rgba(218, 165, 32, 0.603) 0px 12px 13px, rgba(218, 165, 32, 0.466) 0px -3px 5px;
+}
+body .main .pg .intro-title {
+  text-align: left;
+  font-size: 5rem;
+  font-weight: 50;
+  font-weight: lighter;
+  padding: 2px 23px 2px 70px;
+}
+body .main .pg .intro-title strong {
+  z-index: -1;
+  margin: 30px 0 0 0;
+  padding: 2px 14px 2px 125px;
   background-color: goldenrod;
   color: #111111;
-  padding: 2px 23px 2px 23px;
-  border-radius: 2px;
+  border-radius: 3px;
+  display: block;
+  font-weight: 900;
 }
 body footer {
   display: flex;
   align-items: center;
   justify-content: center;
   line-height: 1%;
-}
-body footer span {
-  align-items: center;
-  justify-content: space-between;
-  word-spacing: 2px;
-  letter-spacing: 2px;
-  color: gray;
-  font-family: serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif span;
+  font-family-align-items: center;
+  font-family-justify-content: space-between;
+  font-family-word-spacing: 2px;
+  font-family-letter-spacing: 2px;
+  font-family-color: gray;
+  font-family-font-family: serif;
 }
 body footer .footrLinkArray {
   position: relative;
