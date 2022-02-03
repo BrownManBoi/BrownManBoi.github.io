@@ -88,6 +88,8 @@ body footer {
   line-height: 1%;
 }
 body footer span {
+  align-items: center;
+  justify-content: space-between;
   word-spacing: 2px;
   letter-spacing: 2px;
   color: gray;
