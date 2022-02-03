@@ -83,10 +83,8 @@ body .main .pg .intro--title {
 }
 body footer {
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  box-sizing: border-box;
+  justify-content: center;
   line-height: 1%;
 }
 body footer span {
@@ -97,6 +95,10 @@ body footer span {
 }
 body footer .footrLinkArray {
   position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
 }
 body footer .footrLinkArray ul {
   list-style: none;
