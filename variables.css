@@ -40,7 +40,7 @@ body header .navbar li {
 }
 body header .navbar li:hover {
   transition: ease-in-out 0.2s;
-  background-color: rgba(218, 165, 32, 0.507);
+  background-color: #b88d20;
   border-radius: 3px;
 }
 body header .navbar li:hover a {
@@ -82,14 +82,15 @@ body .main .pg .intro--title {
   border-radius: 2px;
 }
 body footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding-left: 450px;
   line-height: 1%;
 }
 body footer span {
   word-spacing: 2px;
   letter-spacing: 2px;
-  padding-right: 450px;
   color: gray;
   font-family: serif;
 }

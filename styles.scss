@@ -42,7 +42,7 @@ body {
 
                 &:hover {
                     transition: ease-in-out 0.2s;
-                    background-color: rgba(218, 165, 32, 0.507);
+                    background-color: rgb(184, 141, 32);
                     border-radius: 3px;
                     a {
                         color: rgb(17, 17, 17);
@@ -96,14 +96,17 @@ body {
     }
 
     footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        padding-left: 450px;
+        // padding-left: 140px;
         line-height: 1%;
 
         span {
             word-spacing: 2px;
             letter-spacing: 2px;
-            padding-right: 450px;
+            // padding-right: 450px;
             color: gray;
             font-family: serif;
         }
