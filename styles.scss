@@ -13,7 +13,7 @@ body {
         width: 100%;
         z-index: 1;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        box-shadow: goldenrod 0px 20px 30px -10px;
+        box-shadow: rgba(218, 165, 32, 0.171) 0px 10px 20px -5px;
 
         .logo {
             font-size: 2.5rem;
@@ -89,17 +89,21 @@ body {
             perspective: 10px;
 
             h1 {
-                padding: 0;
+                padding: 2px 20px 2px 20px;
                 margin: 0;
                 color: rgb(235, 203, 64);
                 letter-spacing: 3px;
                 font-size: 3rem;
+                text-shadow: 3px 0px 7px rgba(218, 165, 32, 0.377), -3px 0px 7px rgba(218, 165, 32, 0.336), 0px 4px 7px rgba(218, 165, 32, 0.301);
             }
 
             a {
-                text-decoration: none;
-                background-color: goldenrod;
+                text-decoration: underline;
+                background-color: rgb(255, 183, 0);
                 color: rgb(17, 17, 17);
+                border-radius: 1px;
+                font-size: 1.1rem;
+                padding: 0px 7px 0px 5px;
             }
             
             .intro-img-1 {
