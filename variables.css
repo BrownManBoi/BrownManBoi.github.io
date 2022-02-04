@@ -84,6 +84,9 @@ body .main .pg h1 {
   font-size: 3rem;
   text-shadow: 3px 0px 7px rgba(218, 165, 32, 0.377), -3px 0px 7px rgba(218, 165, 32, 0.336), 0px 4px 7px rgba(218, 165, 32, 0.301);
 }
+body .main .pg p {
+  font-size: 1.1rem;
+}
 body .main .pg a {
   text-decoration: underline;
   background-color: #ffb700;
@@ -91,6 +94,7 @@ body .main .pg a {
   border-radius: 1px;
   font-size: 1.1rem;
   padding: 0px 7px 0px 5px;
+  box-shadow: goldenrod 0px 5px 20px -5px;
 }
 body .main .pg .intro-img-1 {
   width: 350px;

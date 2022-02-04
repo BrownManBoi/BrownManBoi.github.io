@@ -84,17 +84,17 @@ body {
             padding: 0 20px;
             height: 100vh;
 
-            overflow-y: auto;
-            overflow-x: hidden;
-            perspective: 10px;
-
             h1 {
                 padding: 2px 20px 2px 20px;
                 margin: 0;
                 color: rgb(235, 203, 64);
                 letter-spacing: 3px;
                 font-size: 3rem;
-                text-shadow: 3px 0px 7px rgba(218, 165, 32, 0.377), -3px 0px 7px rgba(218, 165, 32, 0.336), 0px 4px 7px rgba(218, 165, 32, 0.301);
+                text-shadow: 3px 0px 7px rgba(218, 184, 32, 0.377), -3px 0px 7px rgba(218, 184, 32, 0.336), 0px 4px 7px rgba(218, 184, 32, 0.301);
+            }
+
+            p {
+                font-size: 1.1rem;
             }
 
             a {
@@ -104,6 +104,7 @@ body {
                 border-radius: 1px;
                 font-size: 1.1rem;
                 padding: 0px 7px 0px 5px;
+                box-shadow: goldenrod 0px 5px 20px -5px;
             }
             
             .intro-img-1 {
