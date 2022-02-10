@@ -96,6 +96,10 @@ body .main .pg h1:hover {
 body .main .pg p {
   font-size: 1.1rem;
 }
+body .main .pg .highlight {
+  color: #ffbb00;
+  font-size: 1.1rem;
+}
 body .main .pg a {
   text-decoration: underline;
   background-color: #ffb700;
@@ -131,7 +135,7 @@ body .main .pg .intro-title strong {
 }
 body .main .pg .contact-me-form {
   display: flex;
-  margin-right: 295px;
+  margin-right: 555px;
 }
 body .main .pg .contact-me-form form .form-slate {
   display: flex;
@@ -142,11 +146,11 @@ body .main .pg .contact-me-form form .form-slate label {
   margin: 10px 0 5px 0;
 }
 body .main .pg .contact-me-form form input[type=text], body .main .pg .contact-me-form form input[type=email], body .main .pg .contact-me-form form textarea {
-  width: 300%;
+  width: 400%;
   align-items: flex-start;
-  text-align: center;
   padding: 12px;
   border: 1px solid goldenrod;
+  box-shadow: goldenrod 0px 1px 4px;
   border-radius: 5px;
   color: goldenrod;
   background-color: #1b1a1a;
@@ -154,22 +158,56 @@ body .main .pg .contact-me-form form input[type=text], body .main .pg .contact-m
   box-sizing: border-box;
   resize: vertical;
 }
+body .main .pg .contact-me-form form input[type=text]:focus, body .main .pg .contact-me-form form input[type=email]:focus, body .main .pg .contact-me-form form textarea:focus {
+  outline-width: 0;
+  background-color: #272626;
+  transition: ease-in-out 0.2s;
+  box-shadow: goldenrod 0px 3px 8px;
+}
 body .main .pg .contact-me-form form .submit {
+  margin: 15px 0 0 0;
   display: flex;
   align-items: center;
+  position: absolute;
+  right: 45%;
+}
+body .main .pg .contact-me-form form .submit button {
+  font-family: "Nunito", sans-serif;
+  background-color: goldenrod;
+  border: none;
+  color: #111111;
+  padding: 15px 40px 15px 40px;
+  margin: 4px 2px;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+  box-shadow: goldenrod 0px 2px 8px 0px;
+  display: inline-block;
+  border-radius: 3px;
+}
+body .main .pg .contact-me-form form .submit button:hover {
+  transition: ease-in-out 0.2s;
+  padding: 20px 45px 20px 45px;
+  box-shadow: goldenrod 0px 4px 12px;
 }
 body footer {
+  margin: 90px 0 0 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   line-height: 1%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif span;
-  font-family-align-items: center;
-  font-family-justify-content: space-between;
-  font-family-word-spacing: 2px;
-  font-family-letter-spacing: 2px;
-  font-family-color: gray;
-  font-family-font-family: serif;
+  font-family: "Nunito", sans-serif;
+}
+body footer .copyright-claim {
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Nunito", sans-serif;
+  word-spacing: 5px;
+  color: wheat;
+  margin: 0 -15px 10px 0;
 }
 body footer .footrLinkArray {
   position: relative;
@@ -194,6 +232,34 @@ body footer .footrLinkArray li {
 body footer .footrLinkArray li a {
   text-decoration: underline;
   color: goldenrod;
+}
+body footer .footrSocialMediaLinks {
+  position: relative;
+  right: 2%;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 45px 30px 0;
+}
+body footer .footrSocialMediaLinks ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+body footer .footrSocialMediaLinks ul li {
+  float: left;
+  padding: 0 0 0 90px;
+}
+body footer .footrSocialMediaLinks ul li a {
+  text-decoration: underline;
+  color: #da7a20;
+}
+body footer .footrSocialMediaLinks ul li a:hover img {
+  transition: ease-in-out 0.1s;
+  opacity: 90%;
+}
+body footer .footrSocialMediaLinks ul li a img {
+  width: 25px;
+  opacity: 30%;
 }
 
 /*# sourceMappingURL=variables.css.map */
