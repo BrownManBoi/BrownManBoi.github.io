@@ -5,7 +5,7 @@ body {
     font-family: 'Nunito', sans-serif;
     background-color: rgb(17, 17, 17);
     color: wheat;
-    overflow: hidden; //Hide scrollbar
+    // overflow: hidden; //Hide scrollbar
 
     header {
         background-color: rgb(17, 17, 17);
@@ -225,8 +225,8 @@ body {
 
                             &:hover {
                                 transition: ease-in-out 0.2s;
-                                padding: 20px 45px 20px 45px;
-                                box-shadow: goldenrod 0px 4px 12px;
+                                // padding: 20px 45px 20px 45px;
+                                box-shadow: goldenrod 0px 1px 16px;
                             }
                         }
                     }
@@ -246,6 +246,7 @@ body {
         font-family: 'Nunito', sans-serif;
 
         .copyright-claim {
+            
             align-items: center;
             justify-content: space-between;
             font-family: 'Nunito', sans-serif;
@@ -257,6 +258,7 @@ body {
         }
 
         .footrLinkArray {
+            // display: none;
             position: relative;
             justify-content: center;
             align-items: center;

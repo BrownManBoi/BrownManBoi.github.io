@@ -5,7 +5,6 @@ body {
   font-family: "Nunito", sans-serif;
   background-color: #111111;
   color: wheat;
-  overflow: hidden;
 }
 body header {
   background-color: #111111;
@@ -190,8 +189,7 @@ body .main .pg .contact-me-form form .submit button {
 }
 body .main .pg .contact-me-form form .submit button:hover {
   transition: ease-in-out 0.2s;
-  padding: 20px 45px 20px 45px;
-  box-shadow: goldenrod 0px 4px 12px;
+  box-shadow: goldenrod 0px 1px 16px;
 }
 body footer {
   margin: 90px 0 0 0;
