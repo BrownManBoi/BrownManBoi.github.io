@@ -135,7 +135,7 @@ body {
                 font-size: 5rem;
                 font-weight: 50;
                 font-weight: lighter;
-                padding: 2px 23px 2px 70px;
+                padding: 2px 0px 2px 105px;
 
                 strong {
                     z-index: -1;
@@ -148,11 +148,57 @@ body {
                     font-weight: 900;
                 }
             }
+
+            .contact-me-form {
+                display: flex;
+                margin-right: 295px;
+                // align-items: flex-start;
+                // text-align: center;
+
+                form {
+                    .form-slate {
+                        display: flex;
+                        // flex-direction: row;
+                        margin: 20px 0 0 0;
+                        
+                        label {
+                            display: none;
+                            margin: 10px 0 5px 0;
+                        }
+                    }
+
+                    input[type=text], input[type=email], textarea {
+                        width: 300%;
+                        align-items: flex-start;
+                        text-align: center;
+                        padding: 12px;
+                        border: 1px solid goldenrod;
+                        // ADD BOX-SHADOW GOLDEN GLOW
+                        border-radius: 5px;
+                        color: goldenrod;
+                        background-color: rgb(27, 26, 26);
+                        font-size: 1rem;
+                        box-sizing: border-box;
+                        resize: vertical;
+
+                        &:focus {
+                            // INCREASE BOX SHADOW GLOW
+                            // REMOVE BORDER COLOR CHANGE
+                        }
+                    }
+                    
+                    .submit {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
         }
     }
 
     footer {
         // padding-left: 140px;
+        // position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;

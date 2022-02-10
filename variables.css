@@ -117,7 +117,7 @@ body .main .pg .intro-title {
   font-size: 5rem;
   font-weight: 50;
   font-weight: lighter;
-  padding: 2px 23px 2px 70px;
+  padding: 2px 0px 2px 105px;
 }
 body .main .pg .intro-title strong {
   z-index: -1;
@@ -128,6 +128,35 @@ body .main .pg .intro-title strong {
   border-radius: 3px;
   display: block;
   font-weight: 900;
+}
+body .main .pg .contact-me-form {
+  display: flex;
+  margin-right: 295px;
+}
+body .main .pg .contact-me-form form .form-slate {
+  display: flex;
+  margin: 20px 0 0 0;
+}
+body .main .pg .contact-me-form form .form-slate label {
+  display: none;
+  margin: 10px 0 5px 0;
+}
+body .main .pg .contact-me-form form input[type=text], body .main .pg .contact-me-form form input[type=email], body .main .pg .contact-me-form form textarea {
+  width: 300%;
+  align-items: flex-start;
+  text-align: center;
+  padding: 12px;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  color: goldenrod;
+  background-color: #1b1a1a;
+  font-size: 1rem;
+  box-sizing: border-box;
+  resize: vertical;
+}
+body .main .pg .contact-me-form form .submit {
+  display: flex;
+  align-items: center;
 }
 body footer {
   display: flex;
