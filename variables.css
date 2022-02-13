@@ -134,7 +134,7 @@ body .main .pg .intro-title strong {
   font-weight: 900;
 }
 body .main .pg .contact-me-form {
-  display: flex;
+  display: none;
   margin-right: 555px;
 }
 body .main .pg .contact-me-form form .form-slate {
