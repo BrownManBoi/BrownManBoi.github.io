@@ -1,19 +1,21 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #202020;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  background-color: rgb(17, 17, 17);
   color: wheat;
 }
-
 body header {
-  background-color: #111111;
+  background-color: rgb(17, 17, 17);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: rgba(218, 165, 32, 0.171) 0px 10px 20px -5px;
 }
-
 body header .logo {
   font-size: 2.5rem;
   color: wheat;
@@ -21,67 +23,241 @@ body header .logo {
   margin-left: 25px;
   padding: 10px;
 }
-
 body header .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 body header .navbar ul {
   margin-right: 46px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
-
 body header .navbar li {
   float: left;
   font-size: 1.1rem;
-  padding: 10px;
-  margin: 2px;
+  padding: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 4px;
 }
-
+body header .navbar li:hover {
+  transition: ease-in-out 0.2s;
+  background-color: rgb(184, 141, 32);
+  border-radius: 3px;
+}
+body header .navbar li:hover a {
+  color: rgb(17, 17, 17);
+}
 body header .navbar li.active {
-  -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
   border-radius: 3px;
   background-color: goldenrod;
-  font-size: 1.2rem;
 }
-
 body header .navbar li.active a {
-  color: #292929;
+  color: rgb(17, 17, 17);
 }
-
 body header .navbar a {
   text-decoration: none;
   color: wheat;
 }
-
 body .main {
   color: blanchedalmond;
+  margin: 0 2%;
 }
-
-body .main .pg {
+body .main #home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+}
+body .main .pg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 0 20px;
+  height: 100vh;
 }
-
-body .main .pg:hover {
-  background-color: rgba(250, 235, 215, 0.205);
-  -webkit-transition: ease-in-out 0.2s;
+body .main .pg h1 {
+  padding: 2px 20px 2px 20px;
+  margin: 0px 0px 80px 0px;
+  color: rgb(235, 203, 64);
+  letter-spacing: 3px;
+  font-size: 3rem;
+  text-shadow: 3px 0px 7px rgba(218, 184, 32, 0.377), -3px 0px 7px rgba(218, 184, 32, 0.336), 0px 4px 7px rgba(218, 184, 32, 0.301);
+}
+body .main .pg h1:hover {
   transition: ease-in-out 0.2s;
+  text-shadow: 5px 0px 10px rgba(218, 184, 32, 0.377), -3px 0px 10px rgba(218, 184, 32, 0.336), 0px 4px 10px rgba(218, 184, 32, 0.301);
 }
-/*# sourceMappingURL=styles.css.map */
+body .main .pg p {
+  font-size: 1.1rem;
+}
+body .main .pg .highlight {
+  color: rgb(255, 187, 0);
+  font-size: 1.1rem;
+}
+body .main .pg a {
+  text-decoration: underline;
+  background-color: rgb(255, 183, 0);
+  color: rgb(17, 17, 17);
+  border-radius: 1px;
+  font-size: 1.1rem;
+  padding: 0px 7px 0px 5px;
+  box-shadow: goldenrod 0px 5px 20px -5px;
+}
+body .main .pg .intro-img-1 {
+  width: 350px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(218, 165, 32, 0.267) 0px 54px 55px, rgba(218, 165, 32, 0.521) 0px -12px 30px, rgba(218, 165, 32, 0.699) 0px 4px 6px, rgba(218, 165, 32, 0.603) 0px 12px 13px, rgba(218, 165, 32, 0.466) 0px -3px 5px;
+}
+body .main .pg .intro-title {
+  text-align: left;
+  font-size: 5rem;
+  font-weight: 50;
+  font-weight: lighter;
+  padding: 2px 0px 2px 105px;
+}
+body .main .pg .intro-title strong {
+  z-index: -1;
+  margin: 30px 0 0 0;
+  padding: 2px 14px 2px 125px;
+  background-color: goldenrod;
+  color: rgb(17, 17, 17);
+  border-radius: 3px;
+  display: block;
+  font-weight: 900;
+}
+body .main .pg .contact-me-form {
+  display: none;
+  margin-right: 555px;
+}
+body .main .pg .contact-me-form form .form-slate {
+  display: flex;
+  margin: 20px 0 0 0;
+}
+body .main .pg .contact-me-form form .form-slate label {
+  display: none;
+  margin: 10px 0 5px 0;
+}
+body .main .pg .contact-me-form form input[type=text], body .main .pg .contact-me-form form input[type=email], body .main .pg .contact-me-form form textarea {
+  width: 400%;
+  align-items: flex-start;
+  padding: 12px;
+  border: 1px solid goldenrod;
+  box-shadow: goldenrod 0px 1px 4px;
+  border-radius: 5px;
+  color: goldenrod;
+  background-color: rgb(27, 26, 26);
+  font-size: 1rem;
+  box-sizing: border-box;
+  resize: vertical;
+}
+body .main .pg .contact-me-form form input[type=text]:focus, body .main .pg .contact-me-form form input[type=email]:focus, body .main .pg .contact-me-form form textarea:focus {
+  outline-width: 0;
+  background-color: rgb(39, 38, 38);
+  transition: ease-in-out 0.2s;
+  box-shadow: goldenrod 0px 3px 8px;
+}
+body .main .pg .contact-me-form form .submit {
+  margin: 15px 0 0 0;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 45%;
+}
+body .main .pg .contact-me-form form .submit button {
+  font-family: "Nunito", sans-serif;
+  background-color: goldenrod;
+  border: none;
+  color: rgb(17, 17, 17);
+  padding: 15px 40px 15px 40px;
+  margin: 4px 2px;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+  box-shadow: goldenrod 0px 2px 8px 0px;
+  display: inline-block;
+  border-radius: 3px;
+}
+body .main .pg .contact-me-form form .submit button:hover {
+  transition: ease-in-out 0.2s;
+  box-shadow: goldenrod 0px 1px 16px;
+}
+body footer {
+  margin: 90px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1%;
+  font-family: "Nunito", sans-serif;
+}
+body footer .copyright-claim {
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Nunito", sans-serif;
+  word-spacing: 5px;
+  color: wheat;
+  margin: 0 -15px 20px 0;
+}
+body footer .footrLinkArray {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+body footer .footrLinkArray ul {
+  list-style: none;
+  display: flex;
+  padding-right: 10px;
+}
+body footer .footrLinkArray li {
+  float: left;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px;
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+body footer .footrLinkArray li a {
+  text-decoration: underline;
+  color: goldenrod;
+}
+body footer .footrSocialMediaLinks {
+  position: relative;
+  right: 2%;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 45px 30px 0;
+}
+body footer .footrSocialMediaLinks ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+body footer .footrSocialMediaLinks ul li {
+  float: left;
+  padding: 0 0 0 90px;
+}
+body footer .footrSocialMediaLinks ul li a {
+  text-decoration: underline;
+  color: rgb(218, 122, 32);
+}
+body footer .footrSocialMediaLinks ul li a:hover img {
+  transition: ease-in-out 0.1s;
+  opacity: 90%;
+}
+body footer .footrSocialMediaLinks ul li a img {
+  width: 25px;
+  opacity: 30%;
+}/*# sourceMappingURL=styles.css.map */
