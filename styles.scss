@@ -170,12 +170,15 @@ html {
                         // padding: 0;
 
                         li {
-
+                            display: flex; 
+                            padding: 0px 100px 0px 0px;
                             img {
                                 -webkit-filter: grayscale(100%); 
                                 filter: grayscale(100%);
                                 width: 130px;
                                 opacity: 50%;
+                                // max-inline-size: 300%;
+                                // block-size: auto;
                             }
                         }
                     }
