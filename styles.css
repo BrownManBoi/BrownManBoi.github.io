@@ -151,6 +151,8 @@ html body .main .pg .skillsImgArray ul li img {
   filter: grayscale(100%);
   width: 130px;
   opacity: 50%;
+  max-inline-size: 300%;
+  block-size: auto;
 }
 html body .main .pg .contact-me-form {
   display: none;
