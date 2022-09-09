@@ -155,8 +155,10 @@ html body .main .pg .skillsImgArray ul li img {
   block-size: auto;
 }
 html body .main .pg .contact-me-form {
-  display: none;
+  display: flex;
   margin-right: 555px;
+  align-items: flex-start;
+  text-align: center;
 }
 html body .main .pg .contact-me-form form .form-slate {
   display: flex;
@@ -169,6 +171,7 @@ html body .main .pg .contact-me-form form .form-slate label {
 html body .main .pg .contact-me-form form input[type=text], html body .main .pg .contact-me-form form input[type=email], html body .main .pg .contact-me-form form textarea {
   width: 400%;
   align-items: flex-start;
+  resize: none;
   padding: 12px;
   border: 1px solid goldenrod;
   box-shadow: goldenrod 0px 1px 4px;

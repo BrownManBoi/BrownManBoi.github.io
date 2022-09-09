@@ -185,11 +185,11 @@ html {
                 }
     
                 .contact-me-form {
-                    display: none;
-                    // display: flex;
+                    // display: none;
+                    display: flex;
                     margin-right: 555px;
-                    // align-items: flex-start;
-                    // text-align: center;
+                    align-items: flex-start;
+                    text-align: center;
     
                     form {
                         .form-slate {
@@ -206,6 +206,7 @@ html {
                         input[type=text], input[type=email], textarea {
                             width: 400%;
                             align-items: flex-start;
+                            resize: none;
                             // text-align: center;
                             padding: 12px;
                             border: 1px solid goldenrod;
