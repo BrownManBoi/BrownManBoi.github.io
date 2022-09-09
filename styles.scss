@@ -78,6 +78,21 @@ html {
             color: blanchedalmond;
             // display: flex;
             margin: 0 2%;
+
+            .disclaimer {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+
+                #red {
+                    // position: absolute;
+                    // left: 13.3em;
+                    color: rgb(255, 57, 42);
+                    font-size: 3.2rem;
+                }
+            }
     
             #home {
                 display: flex;
@@ -349,7 +364,6 @@ html {
                             img {
                                 width: 25px;
                                 opacity: 30%;
-                                
                             }
                         }
                     }

@@ -68,6 +68,17 @@ html body .main {
   color: blanchedalmond;
   margin: 0 2%;
 }
+html body .main .disclaimer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+html body .main .disclaimer #red {
+  color: rgb(255, 57, 42);
+  font-size: 3.2rem;
+}
 html body .main #home {
   display: flex;
   flex-direction: row;
