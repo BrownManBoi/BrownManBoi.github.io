@@ -29,6 +29,11 @@ html {
                 margin-top: -6px;
                 margin-left: 25px;
                 padding: 10px;
+                user-select: none;
+                -moz-user-select: -moz-none;
+                -khtml-user-select: none;
+                -webkit-user-select: none;
+                -o-user-select: none;
             }
     
             .navbar {
@@ -49,6 +54,14 @@ html {
                     padding-left: 12px;
                     padding-right: 12px;
                     margin: 4px;
+
+                    a {
+                        user-select: none;
+                        -moz-user-select: -moz-none;
+                        -khtml-user-select: none;
+                        -webkit-user-select: none;
+                        -o-user-select: none;
+                    }
     
                     &:hover {
                         transition: ease-in-out 0.2s;
@@ -151,11 +164,17 @@ html {
                 }
                 
                 .intro-img-1 {
+                    pointer-events: none;
                     width: 350px;
                     position: relative;
                     display: flex;
                     justify-content: space-between;
                     box-shadow: rgba(218, 165, 32, 0.267) 0px 54px 55px, rgba(218, 165, 32, 0.521) 0px -12px 30px, rgba(218, 165, 32, 0.699) 0px 4px 6px, rgba(218, 165, 32, 0.603) 0px 12px 13px, rgba(218, 165, 32, 0.466) 0px -3px 5px;
+                    user-select: none;
+                    -moz-user-select: -moz-none;
+                    -khtml-user-select: none;
+                    -webkit-user-select: none;
+                    -o-user-select: none;
                 }
     
                 .intro-title {
@@ -191,7 +210,13 @@ html {
                         li {
                             display: flex; 
                             padding: 0px 100px 0px 0px;
+                            user-select: none;
+                            -moz-user-select: -moz-none;
+                            -khtml-user-select: none;
+                            -webkit-user-select: none;
+                            -o-user-select: none;
                             img {
+                                pointer-events: none;
                                 -webkit-filter: grayscale(100%); 
                                 filter: grayscale(100%);
                                 width: 130px;
