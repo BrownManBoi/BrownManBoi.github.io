@@ -9,6 +9,14 @@ html body {
   background-color: rgb(17, 17, 17);
   color: wheat;
 }
+html body ::-moz-selection {
+  background-color: rgb(243, 186, 44);
+  color: rgb(17, 17, 17);
+}
+html body ::selection {
+  background-color: rgb(243, 186, 44);
+  color: rgb(17, 17, 17);
+}
 html body header {
   background-color: rgb(17, 17, 17);
   position: -webkit-sticky;

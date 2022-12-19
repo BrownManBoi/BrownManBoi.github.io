@@ -9,6 +9,10 @@ html {
         background-color: rgb(17, 17, 17);
         color: wheat;
         // overflow: hidden; //Hide scrollbar
+        ::selection {
+            background-color: rgb(243, 186, 44);
+            color: rgb(17, 17, 17);
+        }
     
         header {
             background-color: rgb(17, 17, 17);
