@@ -206,6 +206,24 @@ html {
                         // flex-wrap: wrap;
                         // margin: 0;
                         // padding: 0;
+                        overflow: hidden; /* Hide any images that fall outside of the container */
+                        white-space: nowrap; /* Make sure all images stay on one line */
+                        animation: marquee 30s linear infinite; /* Start the animation */
+
+                        // &:hover {
+                        //     // slow down animation on hover
+                        //     animation-duration: 30s;
+                        // }
+                        
+                        img + img {
+                            margin-left: 50px;
+                        }
+
+                        /* Define the keyframes for the animation */
+                        @keyframes marquee {
+                            0% { transform: translateX(0); } /* Move images to the right edge */
+                            100% { transform: translateX(-50%); } /* Move images to the left edge */
+                        }
 
                         li {
                             display: flex; 

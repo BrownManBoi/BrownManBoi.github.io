@@ -19,7 +19,6 @@ html body ::selection {
 }
 html body header {
   background-color: rgb(17, 17, 17);
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
@@ -33,8 +32,7 @@ html body header .logo {
   margin-top: -6px;
   margin-left: 25px;
   padding: 10px;
-  -ms-user-select: none;
-      user-select: none;
+  user-select: none;
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -59,8 +57,7 @@ html body header .navbar li {
   margin: 4px;
 }
 html body header .navbar li a {
-  -ms-user-select: none;
-      user-select: none;
+  user-select: none;
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -153,8 +150,7 @@ html body .main .pg .intro-img-1 {
   display: flex;
   justify-content: space-between;
   box-shadow: rgba(218, 165, 32, 0.267) 0px 54px 55px, rgba(218, 165, 32, 0.521) 0px -12px 30px, rgba(218, 165, 32, 0.699) 0px 4px 6px, rgba(218, 165, 32, 0.603) 0px 12px 13px, rgba(218, 165, 32, 0.466) 0px -3px 5px;
-  -ms-user-select: none;
-      user-select: none;
+  user-select: none;
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -182,12 +178,26 @@ html body .main .pg .skillsImgArray ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden; /* Hide any images that fall outside of the container */
+  white-space: nowrap; /* Make sure all images stay on one line */
+  animation: marquee 30s linear infinite; /* Start the animation */
+  /* Define the keyframes for the animation */
+}
+html body .main .pg .skillsImgArray ul img + img {
+  margin-left: 50px;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  } /* Move images to the right edge */
+  100% {
+    transform: translateX(-50%);
+  } /* Move images to the left edge */
 }
 html body .main .pg .skillsImgArray ul li {
   display: flex;
   padding: 0px 100px 0px 0px;
-  -ms-user-select: none;
-      user-select: none;
+  user-select: none;
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
