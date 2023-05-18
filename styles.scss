@@ -145,7 +145,7 @@ html {
                 }
     
                 p {
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
                 }
     
                 .highlight {
@@ -153,7 +153,7 @@ html {
                     font-size: 1.1rem;
                 }
     
-                a {
+                .gold-tint {
                     text-decoration: underline;
                     background-color: rgb(255, 183, 0);
                     color: rgb(17, 17, 17);
@@ -162,6 +162,7 @@ html {
                     padding: 0px 7px 0px 5px;
                     box-shadow: goldenrod 0px 5px 20px -5px;
                 }
+
                 
                 .intro-img-1 {
                     pointer-events: none;
@@ -321,15 +322,22 @@ html {
                             padding: 40px 0 0 0;
     
                             .project-img {
-                                border: 2px solid goldenrod;
-                                border-radius: 5px;
-                                
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 0 0 0 0;
                                 margin: 0 0 0 0;
-                                padding: 10px 10px;   
-                                // border-radius: 5px;
-                                // box-shadow: rgba(218, 165, 32, 0.267) 0px 54px 55px, rgba(218, 165, 32, 0.521) 0px -12px 30px, rgba(218, 165, 32, 0.699) 0px 4px 6px, rgba(218, 165, 32, 0.603) 0px 12px 13px, rgba(218, 165, 32, 0.466) 0px -3px 5px;
-                                // add box shadow to make it look like it's fading into the background at the bottom, but also add a small inward box shadow to make it look like it's popping out of the background
-                                box-shadow: rgba(218, 165, 32, 0.466) 3px 3px 15px;
+
+                                
+
+                                &:hover {
+                                    cursor: pointer;
+                                    img {
+                                        opacity: 100%;
+                                        -webkit-filter: grayscale(0%); 
+                                        filter: grayscale(0%);
+                                    }
+                                }
                             }
 
                             .project-info {
@@ -339,9 +347,8 @@ html {
                                 align-items: center;
                                 // margin: 20px 0 0 0;
                                 padding: 20px 20px;
-                                // wrap around text so it doesn't overflow
                                 overflow-wrap: break-word;
-                                // border: 2px solid goldenrod;
+                                // border-top: 2px solid goldenrod;
                                 // border-radius: 5px;
                             }
                         }

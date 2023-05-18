@@ -128,13 +128,13 @@ html body .main .pg h1:hover {
   text-shadow: 5px 0px 10px rgba(218, 184, 32, 0.377), -3px 0px 10px rgba(218, 184, 32, 0.336), 0px 4px 10px rgba(218, 184, 32, 0.301);
 }
 html body .main .pg p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 html body .main .pg .highlight {
   color: rgb(255, 187, 0);
   font-size: 1.1rem;
 }
-html body .main .pg a {
+html body .main .pg .gold-tint {
   text-decoration: underline;
   background-color: rgb(255, 183, 0);
   color: rgb(17, 17, 17);
@@ -269,11 +269,18 @@ html body .main .pg .projects ul .project-box {
   padding: 40px 0 0 0;
 }
 html body .main .pg .projects ul .project-box .project-img {
-  border: 2px solid goldenrod;
-  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0 0;
   margin: 0 0 0 0;
-  padding: 10px 10px;
-  box-shadow: rgba(218, 165, 32, 0.466) 3px 3px 15px;
+}
+html body .main .pg .projects ul .project-box .project-img:hover {
+  cursor: pointer;
+}
+html body .main .pg .projects ul .project-box .project-img:hover img {
+  opacity: 100%;
+  filter: grayscale(0%);
 }
 html body .main .pg .projects ul .project-box .project-info {
   display: flex;
