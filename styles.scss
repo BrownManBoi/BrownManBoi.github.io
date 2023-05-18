@@ -202,6 +202,7 @@ html {
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
+                        align-items: center;
                         // align-items: center;
                         // flex-wrap: wrap;
                         // margin: 0;
@@ -241,6 +242,107 @@ html {
                                 opacity: 50%;
                                 max-inline-size: 300%;
                                 block-size: auto;
+                            }
+                        }
+                    }
+                }
+
+                .projects {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 50px 50px;
+                    padding: 0 0 0 0;
+
+                    ul {
+                        // list-style: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden; /* Hide any images that fall outside of the container */
+                        white-space: nowrap; /* Make sure all images stay on one line */
+                        // animation: marquee 30s linear infinite; /* Start the animation */
+
+                        // &:hover {
+                        //     // slow down animation on hover
+                        //     animation-duration: 30s;
+                        // }
+
+                        // /* Define the keyframes for the animation */
+                        // @keyframes marquee {
+                        //     0% { transform: translateX(0); } /* Move images to the right edge */
+                        //     100% { transform: translateX(-50%); } /* Move images to the left edge */
+                        // }
+
+                        li {
+                            list-style: none;
+                            display: flex; 
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            padding: 0px 100px 0px 0px;
+                            user-select: none;
+                            -moz-user-select: -moz-none;
+                            -khtml-user-select: none;
+                            -webkit-user-select: none;
+                            -o-user-select: none;
+                            img {
+                                pointer-events: none;
+                                -webkit-filter: grayscale(100%); 
+                                filter: grayscale(100%);
+                                width: 130px;
+                                opacity: 50%;
+                                max-inline-size: 300%;
+                                block-size: auto;
+                            }
+                        }
+
+                        .project-box {
+                            border: 3px solid goldenrod;
+                            border-radius: 5px;
+                            box-shadow: rgba(218, 165, 32, 0.521) 0px -2px 30px, rgba(218, 165, 32, 0.699) 0px 4px 6px, rgba(218, 165, 32, 0.603) 0px 12px 13px, rgba(218, 165, 32, 0.466) 0px -3px 5px inset;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            word-wrap: break-word;
+                            white-space: pre-line;
+
+                            justify-content: center;
+                            width: 25rem;
+                            height: 35rem;
+                            margin: 50px 50px;
+                            padding: 40px 0 0 0;
+    
+                            .project-img {
+                                border: 2px solid goldenrod;
+                                border-radius: 5px;
+                                
+                                margin: 0 0 0 0;
+                                padding: 10px 10px;   
+                                // border-radius: 5px;
+                                // box-shadow: rgba(218, 165, 32, 0.267) 0px 54px 55px, rgba(218, 165, 32, 0.521) 0px -12px 30px, rgba(218, 165, 32, 0.699) 0px 4px 6px, rgba(218, 165, 32, 0.603) 0px 12px 13px, rgba(218, 165, 32, 0.466) 0px -3px 5px;
+                                // add box shadow to make it look like it's fading into the background at the bottom, but also add a small inward box shadow to make it look like it's popping out of the background
+                                box-shadow: rgba(218, 165, 32, 0.466) 3px 3px 15px;
+                            }
+
+                            .project-info {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                // margin: 20px 0 0 0;
+                                padding: 20px 20px;
+                                // wrap around text so it doesn't overflow
+                                overflow-wrap: break-word;
+                                // border: 2px solid goldenrod;
+                                // border-radius: 5px;
                             }
                         }
                     }
